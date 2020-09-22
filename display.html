@@ -1,0 +1,129 @@
+<!DOCTYPE text>
+<html lang="de">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titel</title>
+        <style>
+            html, body{
+            margin: 0;
+            padding: 0;
+            background: #EAE9EA;
+            }
+            
+            #head{
+            background: #7aaa49;
+            color: #fafafa;                
+            padding: 40px 0;
+            border-bottom: 1px solid #000;
+            margin-bottom: 0px;
+            position: static;
+            }
+            
+            #main-wrapper{
+              margin: 0 auto;
+              width: 1005px;
+              background: #fff;              
+              padding-left: 50px;
+              height: 100%;
+            }
+            
+            #wrapper{
+            display: table;
+            border: 3px solid black; 
+            float: left;
+            }
+            
+            h1{
+            color: #2c4a58;
+            }
+            
+            .row{
+            display: table-row;
+            }
+            
+            .A,.B,.C{
+            display: table-cell;
+            border: 1px dashed black;
+            width: 200px;
+            }
+            
+            table{
+            border: 3px solid black;
+            float: left;
+            }
+            
+            td{
+            border: 1px dashed black;
+            width: 200px;
+            height: 100px;
+            }
+            
+            div#normal div{
+            width: 200px;
+            display: inline-block;
+            border: 1px dashed black;
+            height: 100px;
+            }
+            
+            div#wrapper_gefloatet{
+            float: left;
+            border: 3px solid black;
+            }
+            
+            div#wrapper_gefloatet div{
+            float: left;
+            width: 200px;
+            border: 1px dashed black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            Webhomeschool
+        </div>
+        <div id="main-wrapper">
+            <h1 style="margin-top: 0;padding-top: 20px;">Divs mit Display: "table, table-row,table-cell"</h1>
+            <div id="wrapper">
+                <div class="row">
+                    <div class="A">A mit Lorem ipsum sed diam voluptua. At vero eos et takimata sanctus sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="B">B mit Lorem ipsum sed diam voluptua. At vero eos et accusam kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="C">C mit Lorem ipsum sed diam voluptua.kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                </div>
+            </div>
+            
+            <div style="margin-left: 20px; width: 200px;float: left; border: 3px solid #bf7360; padding: 20px;">
+                Die divs mit "display table" Eigenschaften verhalten sich wie eine echte Tabelle.
+                Alle Spalten sind so lang wie die größte Spalte, auch wenn die "hight" kleiner im CSS-Style steht. Das Geheimnis
+                für gleich hohe Spalten in einem Layout ;-)
+            </div>
+            <hr style="clear: both; border: 0px solid white;"/>
+            
+            <h1>Eine echte Tabelle</h1>
+            <table>
+                <tr>
+                    <td>
+                        Lorem ipsum dolor sit amet, sed diam voluptua. At vero eos rebum. Stet clita sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </td>
+                    <td>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,Lorem ipsum dolor sit amet.
+                    </td>
+                    <td>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyet accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </td>
+                </tr>
+            </table>
+            <hr style="clear: both; border: 0px solid white;"/>
+            <h1>Divs mit Display: "mit float"</h1>
+            <div id="wrapper_gefloatet">
+                <div>A mit Lorem ipsum ipsum dolor sit amet. At vero eos et accusam tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div>B mit Lorem ipsum sed diam voluptua. At vero eos et accusam kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div>C mit Lorem ipsum sed diam voluptua.kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div style="margin-left: 20px;border: 3px solid #bf7360;width: 200px;padding: 20px;float: left;">Die Divs sind unterschiedlich hoch</div>
+        </div>
+        
+    </body>
+</html>

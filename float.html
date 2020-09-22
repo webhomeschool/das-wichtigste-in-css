@@ -1,0 +1,53 @@
+<!DOCTYPE text>
+<html lang="de">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+    <style>
+      p {border: 1px dotted black;}
+      .dotted{
+       border: 1px dotted black;
+      }
+      
+      #head{
+            background: #7aaa49;
+            color: #fafafa;                
+            padding: 40px 0;
+            border-bottom: 1px solid #000;
+            margin-bottom: 20px;
+            position: static;
+            }
+    </style>
+  </head>
+  <body>
+   <div id="head">
+            Webhomeschool
+        </div>
+     <div style="float: left;width: 100px;height: 100px; background: #005b95;text-align: center;">"float: left;"<p>1</p></div>    
+     <p>Der gefloatete Div zieht den Text von unten nach oben links hier
+     </p>
+     <p>Und den Text hier auch, weil das floaten nach oben noch nicht verhindert wurde</p>
+     <div style="background: #ffd08f;width: 20%;">das Element hier wird auch nach oben gezogen. Kommt an der Paragraphen
+            darüber nicht weiter, weil die Paragraphen den gesammten Platz der Browserzeile einnehmen.
+      </div>
+     <div style="background: #e8995b;width: 20%;float: left;border: 1px dotted black;">Das Element hier zieht nach links oben </div>
+     <div style="background: #ff6f4b;width: 20%;float: left;border: 1px dotted black;">
+         Das Element hier wird nach oben links neben sein oberes gefloatetes Element gezogen,
+         weil es durch seine gefloatete Eigenschaft auf die Textgröße schrumpft. Genauso wie das gefloatete Element
+         darüber. Somit können sich die Element nebeneinander Platzieren, weil beide genügend Platz dafür auf dem
+         Bildschirm zur Verfügung haben.
+      </div>
+      <div style="position: absolute;color: white;">
+          Der absolute positionierte wird von den floats nicht beeinflusst, da auf einer
+          anderen Ebene.Es ordnet sich so weit wie möglich an und durch die Texte oben gestoppt.
+      </div>
+      <div style="clear: both; border-bottom: 1px solid #ccc;">&nbsp;</div>
+      <div style="float: left;width: 300px;border: 1px dotted black; margin-top: 400px;">
+          <span class="dotted">Ein Text</span>
+          <span class="dotted">Zweiter Text</span>
+          <span class="dotted">Dritter Text</span>
+      </div>
+  </body>
+</html>

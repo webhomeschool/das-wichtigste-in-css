@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titel</title>
+        <style>
+            html, body{
+            margin: 0;
+            padding: 0;
+            background: #EAE9EA;
+            }
+            
+            #head{
+            background: #7aaa49;
+            color: #fafafa;                
+            padding: 40px 0;
+            border-bottom: 1px solid #000;
+            margin-bottom: 20px;
+            position: static;
+            }
+            
+            div{
+                  position: relative;top: 40px;
+            }
+            
+            div div{
+                  font-size: 3em;
+                  width: 300px;
+                  height: 100px;
+                  background: #fff;
+                  border: 20px solid #7aaa49;
+                  padding: 20px;
+                  text-align: center;
+                  margin: 0 auto;
+            }
+            
+            div#nr1{
+                  line-height: 100px;
+            }
+            div#nr2{
+                  box-sizing: border-box;
+                  line-height: 20px;                  
+            }
+            
+            div#nr3{                
+                  border: 0;
+                  padding: 0;
+                  line-height: 100px;
+            }
+            
+            .text{
+                  font-size: 1.2em;
+                  margin: 0px 0 20px 0;
+                  width: auto;
+                  background: none;
+                  margin: 0 auto;
+                  border: none;
+                  padding: none;
+                  text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            Webhomeschool
+        </div>
+        
+        <div style="position: relative;width: 380px;margin: 0 auto;">
+            <div id="nr1">1</div>
+            <div class="text">
+                1. border und padding werden zur width dazugezählt              
+                
+            </div>
+            <div id="nr2">2</div>
+            <div class="text">
+                2. border und padding verändern width nicht, wegen CSS3: "box-sizing: border-box;"              
+            </div>
+            <div id="nr3">3</div>
+            <div class="text">
+                3. nur mit width        
+                
+            </div>
+        </div>
+        
+        
+        
+    </body>
+</html>

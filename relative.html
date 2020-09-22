@@ -1,0 +1,63 @@
+<!DOCTYPE text>
+<html lang="de">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titel</title>
+        <style>
+            html, body{
+            margin: 0;
+            padding: 0;
+            background: #EAE9EA;
+            }
+            
+            #head{
+            background: #7aaa49;
+            color: #fafafa;                
+            padding: 40px 0;
+            border-bottom: 1px solid #000;
+            margin-bottom: 20px;
+            position: static;
+            }
+            
+            #main-wrapper{
+            margin-left: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            Webhomeschool
+        </div>
+        <div id="main-wrapper">
+            <div style="width: 400px; height: 100px;background: #b75e5e;margin-bottom:-20px;">Das grüne Element wird überlappt vom Element darunter,<br />
+            dem blauen Element</div>
+            <div style="width: 300px; height: 100px;background: #ffa839;margin-bottom:-20px;z-index: 1000;">Das grüne Element wird überlappt vom Element darunter
+            </br>dem pinken Element</div>
+            <em>Ein langer Text, Ein langer Text, Ein langer Text, Ein langer Text, Ein langer Text, Ein langer Text, Ein langer Text, Ein langer Text, Ein langer Text, </em>
+            
+            <div style="width: 200px; height: 100px; background: #5a81aa;margin-left: 50px;">Das pinke Element</div>
+            
+            <!--div style="background: blue;">Das um 100px nach unten verschobene Element</div>
+                <div style="position: relative; bottom: 0px; background: green;">Das relative positionierte Element</div>
+            <div style="position: relative; bottom: 0px; background: red;">Ein statisch positioniertes Element</div-->
+            <div style="width: 150px; height: 100px; background: #7aaa49; position: relative;bottom: 10px;">
+                Das grüne Element relative ist mit bottom 10px nach oben verschoben. 
+            </div>
+            <div style="width: 200px; height: 100px; background: #b75e5e; position: relative;bottom: 10px;">
+                Das lightcoral Element relative ist auch mit 10px nach oben verschoben, deshalb grenzen sie aneinander, anstatt sich zu überlappen.
+            </div>
+            <div style="width: 200px; height: 100px; background: #5a81aa; position: relative;z-index: 2;bottom: 10px;">
+                Das lightcoral Element relative ist auch mit 10px nach oben verschoben, deshalb grenzen sie aneinander, anstatt sich zu überlappen.
+            </div>
+            <div style="width: 200px; height:80px; background: #ffa839; position: relative;bottom: 30px;left: 10px;">
+                Dieses Element würde normalerweise das Elemente darüber überlappen, doch mit z-index:-1; wurde<br />
+                wurde es eine Ebene nach hinten versetzt. Und weil der Text mehr Raum braucht als ihm zugestanden wird mit
+                widht: 200px und height: 100px, fließt er aus dem Boxcontainer hinaus.
+            </div>
+            
+        </div>
+        
+    </body>
+</html>

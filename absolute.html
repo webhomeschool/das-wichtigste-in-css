@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titel</title>
+        <style>
+        
+            html, body{
+            margin: 0;
+            padding: 0;
+            background: #EAE9EA;
+            }
+            
+            #wrapper{
+            position: relative;
+            margin: 0 auto;
+            width: 656px;
+            }
+            #head{
+            background: #7aaa49;
+            color: #fafafa;                
+            padding: 40px 0;
+            border-bottom: 1px solid #000;
+            margin-bottom: 20px;
+            }
+            
+            
+            
+            
+            div{
+            font-size: 20px;
+            line-height: 40px;
+            }
+            
+            span{
+            font-size: 30px;
+            padding-bottom: 35px;
+            line-height: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="head">
+            Webhomeschool
+        </div>
+        <div id="wrapper">
+            <div style="width: 656px;background: #6096bf;"><span>&#9312;</span></br />Ein Div Block Element </div>
+            
+            <div style="position: absolute; background: #60bf60; left: 30px;"><span>&#9313;</span>Ein absolute positioniertes Div ohne Positionsangaben</div>
+            
+            <div style="background: #60bf96;height: 100px;width: 300px;">
+                <span>&#9314;</span>
+            </div>
+            <div style="position: absolute; background: #bf6060; left: 45px;width: 300px;height: 20px;"><span>&#9315;</span></div>
+            <div style="background: #bf9060;width: 300px;height: 20px;margin-left: 10px;"><span>&#9316;</span></div>
+            <div style="position: absolute; background: #cfdce6;width:300px;height: 20px;"><span>&#9317;</span></div>
+            <div style="position: absolute; background: #805959;left: 45px; width: 300px; height: 20px;"><span>&#9318;</span></div>
+            <div style="position: absolute; background: #b4cc8f;left: 100px; width: 300px; height: 20px;"><span>&#9319;</span></div>
+            <div style="position: absolute; background: #805976;left: 100px; width: 300px; height: 20px;top: 10px;"><span>&#9320;</span></div>
+            <div style="position: relative; width: 300px; height: 100px; background: #bf7360; top: 30px;">
+                <span>&#9321;</span>
+                <div style="position: absolute; right: 0px;bottom: 0px; background: #e6d3cf; z-index:2;width: 200px;height: 20px;"><span>&#9322;</span></div>            
+            </div>
+            <p style="position: relative; top: 30px; width: 600px;border: 3px solid #b4cc8f;padding: 25px;">       
+                Das 1.Element ist normal (statisch) positioniert. 
+                Das 2.Element ist absolute mit left: 30px positioniert;
+                Das 3.Element ist statisch positioniert, wir können sehen, es ist;
+                es schließt sich dem erten Element an, weil das 2.Element mit absolute
+                aus dem normalen Objektfluss herausen ist. Das 4.Element grenzt oben ans 3.Element
+                Und weil es das 5.Element unten nicht beeinflusst, schließt sich das 5.Element dem
+                3.Element an, als das nächste statische Element in derselben Ebene.
+                Das 6.Element,7.Element und 8.Element ist absolute Positioniert und ohne Positionsangabe
+                fließen diese Elemente übereinander. 7.Element über der 6.Elementebene usw...
+                Es geht sogar noch besser. Dem absoluten 9.Element haben wir ein top: 10px; gegeben und
+                obwohl viele Divs im Code darunter sind, befindet es sich auf einmal oben beim 1.Element.
+                Das 10.Element ist relatig positioniert und das 11.Element richtet sich deshalb an diesem
+                10.Element aus, weil es sich darinnen befindet.       
+            </p> 
+        </div>
+        
+    </body>
+</html>
